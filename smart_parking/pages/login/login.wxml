@@ -1,0 +1,53 @@
+<view class="container">
+  <view  wx:if="{{login}}">
+    <view class="wrapper">
+    <view class="left-top-sign">Login</view>
+    <view class="welcome">
+      欢迎回来！
+    </view>
+    <view class="input-content">
+      <view class="input-item">
+        <text class="iconfont icon-ren tit"></text>
+        <input type="text" placeholder="请输入手机号码" data-test="abc" data-type="phone" id="phone" bindinput="handleInput"/>
+      </view>
+      <view class="input-item">
+        <text class="iconfont icon-mima tit"></text>
+        <input type="password" placeholder="请输入密码" data-test="abc" data-type="password" id="password" bindinput="handleInput"/>
+      </view>
+    </view>
+    <button class="confirm-btn" bindtap="login">登录</button>
+    <view class="forget-section">
+      忘记密码?
+    </view>
+    <view class="wx-login" bindtap="getUserProfile">
+      <button type="primary" size="mini">微信登录</button>
+    </view>
+      
+  </view>
+  <view class="register-section">
+    还没有账号?
+    <text bindtap="register">马上注册</text>
+    </view>
+  </view>
+
+  <view  wx:else>
+    <view class="wrapper">
+    <view class="left-top-sign">Register</view>
+    <view class="welcome">
+      欢迎注册！
+    </view>
+    <view class="input-content">
+      <view class="input-item">
+        <text class="iconfont icon-ren tit"><text class="text"></text></text>
+        <input type="text" placeholder="请输入手机号码" data-test="abc" data-type="phone" id="phone" bindinput="handleInput"/>
+      </view>
+      <view class="input-item">
+        <text class="iconfont icon-mima tit"><text class="text"></text></text>
+        <input type="password" placeholder="请输入密码" data-test="abc" data-type="password" id="password" bindinput="handleInput"/>
+      </view>
+    </view>
+    <button class="confirm-btn" bindtap="login">注册</button>
+  </view>
+  </view>
+</view> 
+

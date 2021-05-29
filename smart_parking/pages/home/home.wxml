@@ -1,0 +1,45 @@
+<view class="testContainer">
+  <view class="cityCss">{{markers.address_component.city}}</view>
+  <view class="sContainer">
+    <text class="iconfont icon-sousuo"></text>
+    <input type="text" class="routerInput" bindinput="getsuggest" value="{{backfill.title}}" placeholder="search"></input>
+  </view>
+  <view bindtap="getLocation" class="containerView">路线</view>
+</view>
+
+<view bindtap="clickDisplay" class="{{click ? 'dis' : none}}" wx:for="{{suggestion}}" wx:key="index">
+    <view class="disContainer" bindtap="backfill" id="{{index}}">
+      <view class="inputInfo" ><text class="iconfont icon-yuandian-copy"></text>{{item.title}}</view>
+      <view class="inputInfo" style="font-size:20rpx;color:#666;">{{item.addr}}</view>
+    </view>
+</view>
+
+<map id="map" scale="14" class="mapCss" show-location show-compass enable-building scale='16' longitude='{{longitude}}' latitude='{{latitude}}'></map>
+
+<view class="middle">
+  <view wx:for="{{objItem}}" class="middleItem {{addId == index ? 'action' : ''}}" bindtap="addClass" data-id="{{index}}" wx:key="index">
+    {{item}}
+  </view>
+</view>
+
+<view class="footer">
+  <swiper current="{{addId}}" bindchange="changeId">
+    <swiper-item class="swiperItem" >
+        <text class="addr_marker">{{markers.address}}</text>
+        <view bindtap="toParking" class="orderBtn">寻找附近停车场</view>
+    </swiper-item>
+    <swiper-item class="swiperItem">
+      <text>{{markers.address}}</text>
+      <view bindtap="orderCarPort" class="orderBtn">预约车位</view>
+    </swiper-item>
+    <swiper-item class="swiperItem">
+      <view class="scanCode">
+        <text class="iconfont iconsaoma icon" ></text>
+        <text  bindtap="scanCodeEvent" class="saoma">扫码</text>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>
+
+
+

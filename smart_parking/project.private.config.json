@@ -1,0 +1,115 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": -1,
+          "name": "pages/mv/recommend/recommend",
+          "pathName": "pages/mv/recommend/recommend",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/songList/songList",
+          "pathName": "pages/songList/songList",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/play_time/play_time",
+          "pathName": "pages/play_time/play_time",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/order/order",
+          "pathName": "pages/order/order",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/personal/personal",
+          "pathName": "pages/personal/personal",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/login/login",
+          "pathName": "pages/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/home/home",
+          "pathName": "pages/home/home",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/weather/weather",
+          "pathName": "pages/weather/weather",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/packing/packing",
+          "pathName": "pages/packing/packing",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/checkParking/checkParking",
+          "pathName": "pages/checkParking/checkParking",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/orderDetail/orderDetail",
+          "pathName": "pages/orderDetail/orderDetail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "评价",
+          "pathName": "pages/assessment/assesment",
+          "query": "parkId = 10",
+          "scene": null
+        },
+        {
+          "name": "pages/showAssess/showAssess",
+          "pathName": "pages/showAssess/showAssess",
+          "query": "parkId = 10",
+          "scene": null
+        },
+        {
+          "name": "pages/confirm/confirm",
+          "pathName": "pages/confirm/confirm",
+          "query": "parkId = 10",
+          "scene": null
+        },
+        {
+          "name": "pages/userInfo/userInfo",
+          "pathName": "pages/userInfo/userInfo",
+          "query": "parkId = 10",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

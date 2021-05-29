@@ -1,0 +1,159 @@
+@font-face {font-family: "iconfont";
+  src: url('//at.alicdn.com/t/font_2432611_ap30u8mh2c.eot?t=1616765182487'); /* IE9 */
+  src: url('//at.alicdn.com/t/font_2432611_ap30u8mh2c.eot?t=1616765182487#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAMgAAsAAAAABuQAAALUAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqBRIFfATYCJAMMCwgABCAFhG0HQBsvBsgOJSHBwACgAGBlPHyNtfd39xCxJN5Up5NEGyRCoXuC2EhkQiF7Cfe/uvT7HHB8AdpQAYQCgk+WfT6SRQXAYe2w8UhbpzBs3TrldW0MuJz+fwUUyDzLclnbxp48JmCCgY41KNCACiQgbxi74AUeJtBgRANtf/fBk2Ao7FGBuPFcC4yCT1FYsk6oaVhYxCskq0vPgVEAL9H34x/awiCpZPbEg+tdNox8wZ9u/cHWAxcDAvwgwOUVZMwChbhsjB3TBWPqGjRJ3dk1ipCWCm5ViSSGruagf7xE1LALm8AkjCe+eHyCr+4lEsigJkmsAFeI0bV9SE39+e7c3KmFhTPz86dnZ2+f/rVQvjBvXGa+mh2YXTz1Y+5U8PXC8KmQ+Xt+aH7hzK+FYPB9ziZny1rva2eEOKM5wkDk204Lmb2dhJ62zKnVVw2xAhiZVWcvifYRzdjyG5avXE2Fs6tx3jaipa2GK79NrX74bvi4IXz4dPLGiRO2VdVtMFx/8FgVCfj1+OgBqwqusoemj8BhgOpmfqSbP/o3+lvfb7+SNfDPCBbweaf9j4ZUNwvkBtTdhj34rdKBLcWQ2/pcNIknsRzZ3MRoQoPhVAXb1WF9uq57cCGhTneGpNYwsjqjZGHMoqLRPGrU2UKDGXuWN+rE6aLUY9pTgNDmI5IWb8jajJGFsYaKHn9Roy10NDiMvA0bjYdn7uDEksRGoZvIwzThuEZpxsXHiatiFs/LI9ZpwoUXRK1NLeXkHpIgfIkp4prbJqWDHE7jaDc4jsRiFPmcRgiWTWEp/b7mZqfpRU2YxsG0hyMsEmFDQm5CPBiV4ATdJbPy+eMIlxJj4R0VdcHTCE7wekdaNWkZQO7RJAZVPMozwjWuNpLkQBwcFYfsBv2ImBgK8Zv7RRCY1CQ8IeLr0+x0coZqmrbXxX+gmNVgT8qRIkfRfKushO15Mxox9W+mCKqEogA=') format('woff2'),
+  url('//at.alicdn.com/t/font_2432611_ap30u8mh2c.woff?t=1616765182487') format('woff'),
+  url('//at.alicdn.com/t/font_2432611_ap30u8mh2c.ttf?t=1616765182487') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('//at.alicdn.com/t/font_2432611_ap30u8mh2c.svg?t=1616765182487#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-yuandian-copy:before {
+  content: "\e600";
+  color:yellowgreen;
+}
+
+.icon-sousuo:before {
+  content: "\e615";
+}
+
+
+.testContainer {
+  display: flex;
+  flex-flow: nowrap;
+  /* height: 80rpx; */
+  /* margin: 6rpx 10rpx; */
+  margin: 4rpx 10rpx;
+  /* background-color: skyblue; */
+  border-bottom: 1rpx solid rgb(121, 121, 121);
+}
+
+.cityCss{
+  padding-left: 30rpx;
+  /* margin-bottom: 30rpx; */
+  margin-right: 30rpx;
+  line-height: 80rpx;
+}
+
+.sContainer{
+  display: flex;
+  width: 60%;
+  border-radius: 40rpx;
+}
+
+.containerView{
+    line-height: 60rpx;
+    background-color: rgb(7,193,96);
+    color: white;
+    height: 60rpx;
+    margin-top: 10rpx;
+    width: 100rpx;
+    text-align: center;
+    border-radius: 30rpx;
+}
+
+.routerInput{
+    height: 80rpx;
+    margin-left: 10rpx;
+}
+
+.dis{
+  display: none;
+}
+
+.disContainer{
+  border-bottom:  1rpx solid gray;
+}
+
+.disContainer .inputInfo{
+    margin: 10rpx 0;
+
+}
+
+.middle {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-around;
+    height: 70rpx; 
+}
+
+.middle .middleItem{
+  line-height: 70rpx;
+  font-size: 28rpx;
+}
+
+.mapCss{
+      width: 100%;
+      height: 800rpx;
+      display: inline-block;
+}
+
+.action {
+  border-bottom: red 4rpx solid;
+}
+
+.footer{
+  width: 94%;
+  border-radius: 50rpx;
+  margin: 40rpx auto;
+  background-image: url('http://bpic.588ku.com/back_pic/03/56/84/64579f14c12456e.jpg');
+}
+
+.footer .swiperItem{
+  font-size: 30rpx;
+  text-align: center;
+  line-height: 100rpx;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+}
+
+.addr_marker{
+  margin: 0 auto;
+  margin-top: 30rpx;
+  
+  /* background-color: #fff; */
+  border-radius: 30rpx;
+}
+
+.orderBtn{
+    background-color: red;
+    border-radius: 30rpx;
+    width: 400rpx;
+    /* height: 60rpx; */
+    color: white;
+    line-height: 60rpx;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30rpx;
+}
+
+
+.icon{
+    text-align: center;
+}
+
+
+.icon-sousuo{
+  font-size: 35rpx;
+  line-height: 80rpx;
+  padding-top: 4rpx;
+}
+ 
+
+
+.iconsaoma{
+  text-align: center;
+  font-size: 45rpx;
+}
+
+.scanCode{
+  font-size: 35rpx;
+}

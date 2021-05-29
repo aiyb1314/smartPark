@@ -1,0 +1,76 @@
+<view class="asContainer">
+  <view class="header">
+    <image src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=263309222,2798196468&fm=26&gp=0.jpg" style="width:100%; height:300rpx;"></image>
+    <view class="header-sort">
+      <text>按分类看评价</text>
+      <view class="header-kind">
+        <text wx:for="{{sortList}}" data-id="{{index}}">
+          <text>{{item}}</text>
+        </text>
+      </view>
+      <view class="header-all">
+        <text>全部</text>
+        <text>有图/有视频</text>
+        <text>好评</text>
+        <text>中/差评</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="middle">
+    <view class="middle-header">
+      <view class="header-view">
+        <text>按时间排序</text>
+        <text>默认排序</text>
+      </view>
+    </view>
+
+    <view class="middle-content">
+      <view class="content-list" wx:for="{{userAssess}}">
+        <view class="content-header">
+          <image src="../../static/images/music.png" class="left"></image>
+          <view class="right">
+            <text class="title">userName</text>
+            <text class="detitle">8天前|停车3小时|{{item.score}}星好评</text>
+          </view>
+        </view>
+        
+        <view class="contentItem">
+          <text>环境卫生:良好</text>
+          <text>服务态度:不错</text>
+          <text>用户体验:极佳方便</text>
+        </view>
+
+        <view class="content-text">
+          <text>{{userAssess[0].textValue}}</text>
+        </view>
+
+        <view class="content-image">
+          <block wx:for="{{item.pics}}" wx:for-item="imgItem">
+            <image src="{{imgItem}}" class="showImg" style="height: {{height / item.length}}rpx"></image>
+            <text></text>
+          </block>  
+        </view>
+
+        <view class="footer">
+            <view class="footer-left">
+              <text>浏览</text>
+              <text>159次</text>
+            </view>
+
+            <view class="footer-right">
+              <text class="iconfont iconpinglun"><text>100</text></text>
+              <text class="iconfont icondianzan {{click?'action':none}}" catchtap="clickZan"><text>{{num}}</text></text>
+              <text class="iconfont iconjubao"></text>
+            </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="footer-content">
+      <text>停车场</text>
+      <text>客服</text>
+      <text class="footer-action" catchtap="toassess">我要评价</text>
+      <text class="footer-action" bindtap="orderAgain">再来一单</text>
+  </view>
+</view>

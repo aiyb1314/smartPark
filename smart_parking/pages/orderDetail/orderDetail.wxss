@@ -1,0 +1,270 @@
+@font-face {font-family: "iconfont";
+  src: url('//at.alicdn.com/t/font_2402904_7pby3xni7h4.eot?t=1618317516525'); /* IE9 */
+  src: url('//at.alicdn.com/t/font_2402904_7pby3xni7h4.eot?t=1618317516525#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,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') format('woff2'),
+  url('//at.alicdn.com/t/font_2402904_7pby3xni7h4.woff?t=1618317516525') format('woff'),
+  url('//at.alicdn.com/t/font_2402904_7pby3xni7h4.ttf?t=1618317516525') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('//at.alicdn.com/t/font_2402904_7pby3xni7h4.svg?t=1618317516525#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.iconbiaoqiankuozhan_lianxiren-374:before {
+  content: "\ebe7";
+}
+
+.iconSlice6:before {
+  content: "\e656";
+}
+
+.iconxiangxia:before {
+  content: "\e62d";
+}
+
+.iconfl-renminbi:before {
+  content: "\e634";
+}
+
+.iconjiaoyi:before {
+  content: "\e67f";
+}
+
+.icontingchechang:before {
+  content: "\e630";
+}
+
+.iconlianxiren:before {
+  content: "\e65c";
+}
+
+
+page{
+  height: 100%;
+  width: 100%;
+  background-color: #f6f6f6;
+}
+
+#orderContainer{
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+#orderContainer .header{
+  width: 95%;
+  margin: 20rpx auto;
+  background-color: white;
+  height: 8%;
+  display: flex;
+  border-bottom-left-radius: 20rpx;
+  border-bottom-right-radius: 20rpx
+}
+
+.header text{
+    display: inline-block;
+    width: 50rpx;
+    height: 50rpx;
+    margin: auto 20rpx;
+    font-size: 40rpx;
+    background-color: #ccffff;
+    text-align: center;
+    border-radius: 50rpx;
+    line-height: 50rpx;
+}
+
+.header .header-view{
+  width: 80%;
+  font-size: 10rpx;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.header-view text{
+  font-size: 30rpx;
+  text-align: left;
+  width: 100%;
+  background-color: #fff;
+  line-height: 20rpx;
+}
+
+.header-view-one{
+  padding-top: 35rpx;
+}
+
+.header-view-two{
+  color: gray;
+  font-size: 20rpx !important;
+  padding-bottom: 15rpx;
+}
+
+.middle{
+  width: 100%;
+  height: 30%;
+  background-color: white;
+  padding: 20rpx;
+}
+
+.middle-title .tag{
+  color: gray;
+  font-size: 25rpx;
+}
+
+.middle-title .locate{
+  margin: 0 14rpx;
+  font-weight: bold;
+}
+
+.middle-content{
+  display: flex;
+  margin-top: 30rpx;
+  width: 100%;
+  height: 50%;
+}
+
+.middle-content .img{
+  width: 25%;
+  height: 90%;
+  border-radius: 15rpx;
+  margin-right: 30rpx;
+}
+
+.middle-content .title{
+  font-size: 25rpx;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+}
+
+.middle-content .title text:first-child{
+  margin-top: 0;
+}
+
+.middle-content .title text{
+  display: inline-block;
+  margin-top: 20rpx;
+}
+
+.middle-footer{
+  margin-top: 15rpx;
+  position: relative;
+  height: 25%;
+}
+
+.middle-footer .btn{
+  border: 1rpx gray solid;
+  font-size: 20rpx;
+  border-radius: 20rpx;
+  position: absolute;
+  right: 20rpx;
+}
+
+.middle-footer .price{
+  position: absolute;
+  font-size: 25rpx;
+  right: 30rpx;
+  bottom: 0rpx;
+}
+
+.middle-footer .price text:first-child{
+  font-weight: bold;
+}
+
+.iconfl-renminbi{
+  font-size: 20rpx;
+  color: #FC5531;
+  padding-top: 10rpx;
+  display: inline-block;
+  margin-left: 5rpx;
+}
+
+.middle-footer text:last-child{
+  font-size: 30rpx;
+  color: #FC5531;
+}
+
+.footer{
+  background-color: #fff;
+  margin-top:20rpx;
+  padding-left: 25rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-title{
+  height: 60rpx;
+  line-height: 60rpx;
+}
+
+.footer .footer-title text:last-child{
+  float: right;
+  font-size: 23rpx;
+  color: gray;
+}
+
+.footer-title .iconxiangxia{
+  padding-right: 30rpx;
+  margin-left: 5rpx;
+}
+
+.footer-content{
+  width: 100%;
+}
+
+.content-item{
+  margin-top: 20rpx;
+  font-size: 23rpx;
+  width: 100%;
+}
+
+
+.content-item text:first-child{
+  display: inline-block;
+  width: 30%;
+}
+
+.content-detail text:first-child{
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 50rpx;
+}
+
+.content-exe{
+  margin-top: -5rpx;
+}
+
+.content-item text:last-child{
+  margin-top: 5rpx;
+  display: inline-block;
+  width: 67%;
+}
+
+.footer-btn{
+    margin-top: 20rpx;
+    /* padding: 20rpx; */
+    text-align: center;
+    border-top: 1rpx solid gray;
+    margin-right: 30rpx;
+    box-sizing: border-box;
+    line-height: 80rpx;
+}
+
+.iconbiaoqiankuozhan_lianxiren-374{
+  color: skyblue;
+  font-size: 30rpx;
+  line-height: 80rpx;
+}
+
+.footer-btn .btn{
+  display: inline;
+  border: 1px white;
+  font-size: 25rpx;
+  margin: auto 0;
+}

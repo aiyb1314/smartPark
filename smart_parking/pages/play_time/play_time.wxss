@@ -1,0 +1,30 @@
+page{
+    /* width: 1300%; */
+    height: 100%; 
+    background-image: url('https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1861325923,3214681929&fm=26&gp=0.jpg');  
+}
+
+
+.swiHeader .swiItem image{
+   width: 100%;
+}
+
+.viewList{
+   height: 65%;
+   /* display: flex; */
+   /* height: calc(100% - 300rpx); */
+   /* flex-direction: column;
+   justify-content: space-around; */
+   font-size: 1.3rem;
+}
+
+
+.viewItem{
+    border: 2rpx solid skyblue;
+    border-radius: 30rpx;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 100rpx;
+    margin-top: 20%;
+}

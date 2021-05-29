@@ -1,0 +1,58 @@
+<view class="header">
+  <view class="box">
+       <view bindtap="choseItem" data-id="{{index}}" class="box-item {{choseId == index ? 'action' : none}}" wx:for="{{list}}"  wx:key="*this">
+      <text>{{item}}</text>
+    </view>
+    </view>
+  <swiper style="height: {{actHeight}}" class="orderContainer" current="{{current}}" bindchange="currentchange">
+    <swiper-item wx:for="{{allArr}}" wx:key="*this">
+      <view wx:if="{{item == '' ? true : false}}">
+          <view class="imgItem"> 
+          <image mode="aspectFit" 
+          src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3355464299,584008140&fm=26&gp=0.jpg"></image>
+          <view class= "imgItemView">暂无订单</view>
+          </view>
+      </view>
+      <view  wx:else>
+        <view wx:for="{{item}}" class="orderShow" wx:key="*this" >
+        <block wx:if="{{item.code == '已完成'}}">
+          <view class="showheader" catchtap="showDetail"  >
+            <image src="/static/images/car_stop/parking.png" class="imgIcon"></image>
+            <text class="location">{{item.location}}</text>
+            <text class="locationDot">...></text>
+            <text class="code">{{item.code}}</text>  
+            <view class="showmidset">{{item.rules}}</view>
+          </view>
+        </block>
+        
+        <block wx:else>
+          <view class="showheader" >
+            <image src="/static/images/car_stop/parking.png" class="imgIcon"></image>
+            <text class="location">{{item.location}}</text>
+            <text class="locationDot">...></text>
+            <text class="code">{{item.code}}</text>  
+            <view class="showmidset">{{item.rules}}</view>
+          </view>
+        </block>
+       
+          <view class="showFooter">
+            <text class="orderTime">下单时间:{{item.time}}</text>
+            <block wx:if="{{item.price}}">
+              <text class="showPrice">合计: <text class="price">￥{{item.price}}</text></text>
+            </block>
+          </view>
+          <view wx:if="{{item.code == '正在进行'}}">
+            <text class="btn" catchtap="pay">立即付款</text>
+            <text class="btnlock" bindtap="lock">开锁</text>
+          </view>
+          <view wx:elif="{{item.code == '已取消'}}" class="orderTime">
+              <text>取消时间:{{item.cancelTime}}</text>
+          </view>
+          <view wx:else>
+             <text class="btn" catchtap="again">再来一单</text>
+          </view>
+      </view> 
+      </view>
+    </swiper-item>
+  </swiper>
+</view>

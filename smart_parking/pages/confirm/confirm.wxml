@@ -1,0 +1,75 @@
+<view class="orderContainer">
+  <view class="header">
+    <image src="../../static/images/定位.png"></image>
+    <view class="right">
+      <text>徐先生{{orderInfo.telphone}}</text>
+      <text>{{orderInfo.lastposition}}</text>
+      <text>{{orderInfo.orderTime}}</text>
+      <text>预约时间超时可以增加预约时间</text>
+    </view>
+  </view>
+
+  <view class="middle">
+    <view class="middle-header">
+      <text class="iconfont icon-tingchechang"></text>
+      <text>万达停车场</text>
+    </view>
+    <view class="middle-title">
+      <image src="../../static/images/car_stop/parking.png" style="width:150rpx; height: 150rpx;opacity: 0.9"></image>
+      <view class="title-right">  
+          <text>慧停车在线实时预定服务</text>
+          <text>{{orderInfo.lastposition}}停车位</text>
+          <text>下单时间:      {{orderInfo.orderTime}}</text>
+      </view>
+    </view>
+    <view class="middle-content">
+      <view class="content-item">
+        <text>预约时间</text>
+        <text>{{orderInfo.price_time}}</text>
+      </view>
+      <view class="content-item">
+        <text>公益停车</text><text style="color:red; opacity: 0.4;">每0.1%停车费用将用于公益事业</text>
+      </view>
+      <view class="content-item">
+        <text>预约规则</text>
+        <text>车位不满不收取预约费用</text>
+      </view>
+      <view class="content-item">
+        <text class="iconfont icon-RectangleCopy" catchtap="showRules"><text>退单险</text><text class="cancelOrder {{!show ? 'hiden' : ''}}">在停车未停满之前取消预约不收取任何费用
+        </text></text>
+        
+      </view>
+      <view class="content-item">
+        <text class="bzText">预定备注</text>
+        <input class="bzInput"/>
+      </view>
+    </view>
+  </view>
+ 
+  <view class="payOption">
+      <view class="payItem">
+        <text class="iconfont icon-anquan"></text>
+        <text class="noSerct">免密支付</text>
+        <text class="word-right" catchtap="choseItem">50元以下可使用 <text class="iconfont {{showIcon}}"></text></text>
+      </view>
+      <view class="payItem">
+        <text class="iconfont icon-zhifu"></text>
+        <text>帮我付</text>
+        <text class="itemtag">></text>
+      </view>
+  </view>
+  <view class="niName">
+    <text class="iconfont icon-xianshi_xuanze"><text>匿名预约</text></text>
+  </view>
+
+  <view class="footer">
+    <view class="footer-head">
+      <text class="iconfont icon-anquan"></text>
+      <text>付款方式使用安全支付，您在停车完成后直接支付</text>
+    </view>
+    <view class="footer-final">
+      <text>预约停车3小时,预计:10元</text>
+      <text bindtap="submitOrder">提交订单</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,69 @@
+<view id="orderContainer">
+  <view class="header">
+    <text class="iconfont iconjiaoyi"></text>
+    <view class=header-view"> 
+      <text class="header-view-one">交易成功啦！</text>
+      <text class="header-view-two">客观请再来一次</text>
+    </view>
+
+  </view>
+
+  <view class="middle">
+    <view class="middle-title">
+        <text class="iconfont icontingchechang"></text>
+        <text class="locate">万达广场停车场</text><text class="tag">></text>
+    </view>
+    <view class="middle-content">
+        <image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic.52112.com%2F180726%2FEPS-180726_187%2FtdwfZEq5p2_small.jpg&refer=http%3A%2F%2Fpic.52112.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1621343664&t=a6a71aee2d03e17c1ac5c6b551c1173c"  class="img"></image>
+        <view class="title">
+          <text>宣城市宣州区万达停车场</text>
+          <text>单价:<text>{{orderInfo.price}}</text></text>
+          <text>价格:<text>{{orderInfo.totalPrice}}</text></text>
+        </view>
+    </view>
+    <view class="middle-footer">
+      <button size="mini" plain class="btn" bindtap="goToAssess">好评满意</button>
+      <view class="price"> 
+        <text>实付款</text> 
+        <text class="iconfont iconfl-renminbi"></text>
+        <text>{{orderInfo.actPrice}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="footer">
+    <view class="footer-title">
+      <text>订单信息</text>
+      <text>查看更多 <text class="iconfont iconxiangxia"></text></text>
+    </view>
+    <view class="footer-content">
+      <view class="content-item content-detail">
+        <text>具体信息:</text>
+        <text>{{orderInfo.username}},{{orderInfo.telphone}},
+          {{orderInfo.startposition}},
+          {{orderInfo.lastposition}}
+        </text>
+      </view>
+      <view class="content-item content-exe">
+        <text>订单编号:</text>
+        <text>{{orderInfo.orderId}}</text>
+      </view>
+      <view class="content-item">
+        <text>创建时间:</text>
+        <text>{{orderInfo.orderTime}}</text>
+      </view>
+      <view class="content-item">
+        <text>停车时间:</text>
+        <text>{{orderInfo.parkTime}}</text>
+      </view>
+      <view class="content-item">
+        <text>付款时间:</text>
+        <text>{{orderInfo.payTime}}</text>
+      </view>
+    </view>
+    <view class="footer-btn">
+      <text class="iconfont iconbiaoqiankuozhan_lianxiren-374"></text>
+      <button type="contact" bindcontact="call" plain class="btn" size="mini">联系客服</button>
+    </view>
+  </view>
+</view>

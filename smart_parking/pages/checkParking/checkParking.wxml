@@ -1,0 +1,73 @@
+<view class="checkContainer" wx:if="{{action}}">
+  <swiper autoplay indicator-dots  style="height:{{clientHeight?clientHeight+'px':'auto'}}">
+    <swiper-item wx:for="{{parkInfo.img}}" wx:key="*this">
+      <image src="{{item}}" ></image>
+    </swiper-item>
+  </swiper>
+
+  <view class="content">
+    <view class="title price">
+      <text>{{parkInfo.title}}</text>
+      <text class="iconfont icon-jiage"><text>{{parkInfo.price}}元/小时</text></text>
+      <text class="stopTimes">已停1000次</text>
+    </view>
+    
+    <view class="title info">
+      <text class="infoTitle" bindtap="checkAllAssess" data-id="{{parkInfo}}">{{parkInfo.info}}</text>
+      <text class="iconfont icon-daohang1" bindtap="getLocation"><text class="checkMap">查看地图</text></text>
+    </view>
+
+    <view class="title orderTimeContainer">
+      <text id="ordertime">预约时长</text>        
+      <scroll-view  scroll-x="true" class="orderTime">
+        <view wx:for="{{timeList.priceList}}" wx:key="index" 
+        class="itemOrder {{clickId === index ? 'clickAction' : none}}" 
+        bindtap="getTime" data-time="{{item}}" data-id="{{index}}">
+          <text class="lst">
+            {{item.time}}
+          </text>
+        </view>
+        <text style="float: right">
+            更多日期
+        </text>
+      </scroll-view>
+    </view>
+    <view class="title location">
+      <image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fcar0.autoimg.cn%2Fupload%2Fspec%2F4945%2Fu_20120220072722314264.jpg&refer=http%3A%2F%2Fcar0.autoimg.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1620811413&t=5ed94490888d4d813242fbe805eb3b01" class="left"></image>
+      <view class="orderContainer">
+          <view class="carport"> 剩余车位数:{{price_time.carport}}</view>
+          <view>{{price_time.price}}{{price_time.time}}</view>
+        <view class="orderBtn"> 
+          <view class="viewBtn" bindtap="orderParking" >
+            <text class="iconfont icon-yuyue1"></text>
+            <text>预约</text>
+          </view> 
+        </view>
+      </view>
+    </view>
+
+    <view class="footerBar">
+      <text>客服</text>
+      <text>更多时间</text>
+    </view>
+</view>  
+</view>
+<view wx:else class="startComputer" style="height:{{clientHeight*4+'px'}}">
+    <view class="showTime"> 
+      <image src="https://img.zcool.cn/community/01728e5c3567a0a8012090db20f1df.gif" class="img"></image>
+      <text class="time">{{time}}</text> 
+    </view>
+    <button type="primary" class="stopTime" bindtap="stopTime">停止预约</button>
+    <view class="rule">
+      <text class="fixedrule" bindtap="showRule">预约计费规则</text>
+      <view class="cost {{ruleshow?'action':''}}" >
+        <text wx:for="{{calculate}}" class="text" wx:key="*this">{{item}}</text>
+      </view>
+    </view>
+</view>
+
+
+
+
+
+

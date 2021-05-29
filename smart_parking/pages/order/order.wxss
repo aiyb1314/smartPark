@@ -1,0 +1,150 @@
+.header{
+  line-height: 80rpx;
+}
+
+.box {
+  height:100rpx;
+  white-space: nowrap;
+  box-sizing: border-box;
+  opacity: 0.8;
+  color: skyblue;
+}
+
+.box-item {
+  border-bottom: 1rpx solid #D9DFE8;
+  width: 25%;
+  height:100%;
+  background-color: #fff;
+  box-sizing: border-box;
+  display: inline-block;
+  line-height: 104rpx;
+  text-align: center;
+  font-family: 'cursive' 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 28rpx;
+}
+
+.action{
+  color: black;
+  border-bottom: 4rpx solid red;
+}
+
+swiper-item{
+  height: 100%;
+}
+
+.imgItem{
+  padding: 300rpx 0;
+  width: 100%;
+  background-color: white;
+  height: 100%;
+}
+
+
+.imgItem .imgItemView{
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  margin: 20rpx 0;
+  color: springgreen;
+}
+
+
+.orderShow{
+    display: flex;
+    flex-flow: column;
+    width: 97%;
+    margin: 0 auto;
+    border-radius: 20rpx;
+    /* background-color:seashell; */
+    padding: 0 20rpx;
+    margin-bottom: 15rpx;
+    background-color: white;
+}
+
+.orderShow .showheader{
+  display: flex;
+  height: 120rpx;
+  position: relative;
+  border-bottom: 1rpx solid rgba(238, 222, 222, 0.8);
+}
+.orderShow .imgIcon{
+  width:40rpx; 
+  height:40rpx;
+  margin: auto 0;
+}
+
+.orderShow .location{
+  display: inline-block;
+  margin: 0 15rpx;
+  width: 52%; 
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 33rpx;
+}
+
+.locationDot{
+  font-size: 25rpx;
+  padding-top: 5rpx;
+  padding-right: 10rpx;
+}
+
+.showmidset{
+    position: absolute;
+    bottom: 10rpx;
+    left: 55rpx;
+    padding: 0;
+    font-size: 22rpx;
+    line-height: 1.6em;
+    padding:0 4rpx ;
+    color: red;
+    border: 1rpx solid #FFBA15;
+    border-radius: 10rpx;
+}
+
+.orderShow .code{
+  /* margin: auto; */
+  position: absolute;
+  right: 15rpx;
+  bottom: 35rpx;
+  color:#EEE9E9;
+}
+
+.showFooter{
+  position: relative;
+}
+
+.showFooter .showPrice{
+  position: absolute;
+  right: 30rpx;
+  top: -4rpx;
+}
+
+.showFooter .price{
+  font-size:  32rpx;
+  color: red;
+  opacity: 0.6;
+}
+
+.btn{
+  float: right;
+  margin: 0 15rpx;
+  margin-bottom: 20rpx;
+  background-color: #FBE09F;
+  padding: 0 20rpx;
+  border-radius: 20rpx;
+  line-height: 2em;
+}
+
+.btnlock{
+  float: left;
+  margin: 0 15rpx;
+  margin-bottom: 20rpx;
+  background-color: #CBE2B3;
+  padding: 0 20rpx;
+  border-radius: 20rpx;
+  line-height: 2em;
+}
+
+.orderTime{
+  height: 50%;
+}

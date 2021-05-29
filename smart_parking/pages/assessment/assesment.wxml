@@ -1,0 +1,48 @@
+
+<view class="header">
+  <view class="service">
+  <view class='score'>
+    <view class='left'>
+      评分
+    </view>
+    <view class='right'>
+       <view bindtap="starTap" data-index="{{index}}"  class="star" wx:for="{{userStars}}" wx:key="index">
+        <image src="{{item}}"></image>
+      </view>
+      <text class='rtxt'>{{wjxScore}}.0分</text>
+    </view>
+  </view>
+  <!--内容-->
+  <view class='content'>
+    <view class='left'>
+      内容
+    </view>
+    <view class='right'>
+      <text bindtap='label' class="{{attitude===true ? 'labelColor':''}}" data-index="{{attitude}}">小清新</text>
+      <text bindtap='label1' class="{{time===false? 'labelColor':''}}" data-index="{{time}}">文采好</text>
+      <text bindtap='label2' class="{{efficiency===false?'labelColor':''}}" data-index="{{efficiency}}">甜甜的</text>
+      <text bindtap='label3' class="{{environment===false?'labelColor':''}}" data-index="{{environment}}">值得收藏</text>
+      <text bindtap='label4' class="{{professional===false?'labelColor':''}}" data-index="{{professional}}">很文艺</text>
+    </view>
+  </view>
+  <!--图片-->
+  <view class='picture'>
+    <view class='left'>
+      图片
+    </view>
+    <view class='right'>
+       <view class="parcel" wx:for="{{pics}}" wx:key="{{index}}">
+       <image src="{{pics[index]}}" class="According" data-index="{{index}}" mode="aspectFill" bindtap="previewImg"></image>
+       </view>
+      <image src='../../static/images/assessment/addPic.png' class='add' bindtap='choose'></image>
+    </view>
+  </view>
+</view>
+<!--textarea-->
+<view class="conts">
+    <textarea class="areas" placeholder='更多评价请写在这里（最多300字）' minlength="{{min}}" maxlength="{{max}}" bindinput="inputs">
+    </textarea>
+</view>
+</view>
+
+<button class='btn' size="mini"  plain bindtap='handleBtn'>提交评价</button>

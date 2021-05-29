@@ -1,0 +1,53 @@
+<view class="userInfoContainer"> 
+  <view class="header">
+    <image src="{{userInfo.avatarUrl}}" bindtap="updateImg"></image>
+    <text>更换头像</text>
+  </view>
+
+  <view class="middle"> 
+    <view class="middle-item">
+      <text>联系电话</text>
+      <text>未绑定</text>
+      <text>></text>
+    </view>
+    <view class="middle-item personsign">
+      <text>停车昵称</text>
+      <input type="text" placeholder="{{userInfo.nickName}}" value="{{nickName}}"  bindblur="getNickName"/>
+      <text>></text>
+    </view>
+    <view class="middle-item">
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+          <text>性别</text>
+          <text class="sex">{{array[index]}}</text>
+          <text>></text>
+      </picker>
+    </view>
+
+    <view class="middle-item personsign" bindtap="writeSign">
+      <text>个性签名</text>
+      <input type="text" placeholder="{{userInfo.intro?userInfo.intro:'介绍下你自己'}}"  bindinput="getIntro"/>
+      <text>></text>
+    </view>
+   
+    <view class="middle-item" bindtap="editCard">
+      <text>车牌号</text>
+      <text class="car">{{userInfo.car}}</text>
+      <text>></text>
+    </view>
+    
+    <block wx:if="{{editCard}}"> 
+      <view class="edit-container">
+        <view class="edit-header">
+          <picker mode="selector" class="picker" bindchange="provinceChange" value="{{1}}" range="{{province}}">{{province[pindex]}}
+          </picker>
+          <block wx:for="234567" wx:key="*this"><text class="{{num.id===index?'action':'none'}}" data-id="{{index}}" bindtap="keyboard" >{{num.numlist[index].title}}
+          </text></block>
+        </view>
+        <view class="edit-content">
+          <text wx:for="{{numCard}}" bindtap="getTitle" data-id="{{item}}">{{item}}</text>
+        </view>
+        <button type="primary" size="mini" class="btn" bindtap="submit">确定</button>
+      </view> 
+    </block>
+  </view>
+</view>

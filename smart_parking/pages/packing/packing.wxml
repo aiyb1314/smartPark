@@ -1,0 +1,28 @@
+<view class="thisContainer">
+  <view class="headerTitle">
+    <text>去停车场</text>
+    <text>全站搜</text>
+  </view>
+  <view class="parkContainer" wx:if="{{parkingsInfo}}">
+    <view class="all" style="height: {{clientHeight?clientHeight+'px':'auto'}}" wx:for="{{parkingsInfo}}" wx:key="id" bindtap="toOrder" data-id="{{item.id}}">
+    <image class="left" src="{{item.img}}"></image>
+    <view class="content">
+      <text class="title">{{item.title}}</text>
+      <text class="distance">据您直线:{{item.distance}}km</text>
+      <text class="location">剩余车位:{{item.location}}</text>
+      <text class="price">
+        <text class="iconfont icon-jiage">
+          <text>{{item.price}}</text>
+        </text>
+      </text>
+    </view>
+  </view>
+</view>
+
+<view wx:else class="hideView">
+    <view class="hideInfo" style="height: {{windowHeight+'px'}}">
+      <view class="hideText"><text>暂无停车场信息</text></view>
+    </view>
+ 
+</view>
+</view>
